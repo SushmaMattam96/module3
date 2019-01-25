@@ -1,0 +1,30 @@
+<html>
+<script>
+var employee={
+empId:100,
+empName : "Shilpa",
+empSal : 30000,
+ 
+	display:function()
+		{
+			console.log(this.empId)
+			console.log(employee["empNaame"]);
+			console.log(this["empName"]);
+			console.log(employee["empSal"]);
+			console.log("empId" in employee);
+			console.log("deptNo" in employee);
+			//console.log(this.empId+" "+this.empName+" "+this.empSal);
+		}
+ 
+ }
+ 
+ //var emp=new employee();
+ employee.display();
+// console.log("empId" in employee);
+// console.log("deptNo" in employee);
+console.log(employee.getEmpId==undefined);
+ </script>
+ <body>
+ Hi how are you
+ </body>
+ </html>

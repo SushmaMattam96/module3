@@ -1,0 +1,17 @@
+<html>
+<script>
+function Employee(empId,empName,empSal)
+{
+	this.empId=empId;
+	this.empName=empName;
+	this.empSal=empSal;
+}
+Employee.prototype.getEmployeeInfo=function()
+{
+	console.log(this.empId+" "+this.empName+" "+this.empSal);
+}
+var emp=new Employee(90,"Deena",56000);
+emp.getEmployeeInfo();
+
+</script>
+</html>

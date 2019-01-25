@@ -1,0 +1,37 @@
+<html>
+<script>
+var obj= {} ;
+obj.getId=function getEmployeeId(){
+
+console.log("id="+110);
+}
+obj.getId();
+
+var emp=function()
+{
+console.log("Hello from Emp");
+}
+emp();
+
+
+(function showMessage() {
+console.log("Welcome to OOJS");
+})();
+
+function createStudent(stuId, stuName,marks)
+{
+var stu= {};
+stu.stuId=stuId;
+stu.stuName= stuName;
+stu.marks=marks;
+stu.showData = function()
+{
+console.log(stu.stuId+" "+stu.stuName+" "+stu.marks)
+}
+stu.showData();
+}
+createStudent(12,"Vidhya",90);
+</script>
+<body>
+</body>
+</html>
